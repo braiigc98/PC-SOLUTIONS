@@ -1,0 +1,92 @@
+@font-face { /*tipo de fuente descargada*/
+    font-family: 'BebasNue';
+    src: url(./fonts/BebasNeue-Regular.ttf);
+}
+@font-face { /*tipo de fuente descargada*/
+    font-family: 'Staat';
+    src: url(./fonts/Staatliches-Regular.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    
+}
+.header{
+    background: rgb(46,6,60);
+    background: linear-gradient(90deg, rgba(46,6,60,1) 27%, rgba(45,12,15,1) 84%);  
+    width: 100vW; /*ocupa el ancho del body*/
+    align-items: center;
+    justify-content: space-around; /*para que quede un margen entre el borde y los contenidos del "header"*/    
+    display: flex; /*permite centrar y mover la imagen del header*/
+}
+.navigation li{
+    list-style: none; /*quita el estilo subrayado de las palabras del header*/
+    display: inline-block; /* permite a las palabras alinearse en el header y al lado del logo*/
+    margin: 0px 25px; /*mantiene un margen entre las palabras*/
+    color: whitesmoke; /*color de las letras*/
+    font-family: 'Staat'; /*fuente de la letra*/
+    font-weight: 400; /*cambia la intensidad de las letras*/
+    font-size: 1.2em;
+}
+.navigation{
+    display: flex; /* para que el meno de nav se ponga en linea*/
+    justify-content: space-around; /* para que quede un margen entre el borde y los contenidos del "nav"*/
+    align-items: center; /*para alinear en el centro todos los items del nav*/   
+}
+.section-principal{
+    width: 100%;
+    height: 100vh;
+    background: rgb(69,0,92);
+    background: linear-gradient(90deg, rgba(69,0,92,1) 14%, rgba(167,14,85,1) 86%);
+    background-color: blue;
+}
+.container-info-slogan{
+    width: 100%;
+    display: flex; /*pone el contenido de todo el slogan en linea*/
+    justify-content: space-around; /*para que quede un margen entre el borde y los contenidos de todo el contenido del slogan*/
+    align-items: center; /*para alinear en el centro todos los items del slogan*/   
+    
+}
+.container-img-slogan{
+    justify-content: space-around;
+    display: flex;
+    width: 50%;
+    justify-content: space-around; 
+}
+.container-text-slogan{
+    /* background-color: red; */
+    width: 50%;
+    color: whitesmoke;
+    font-family: 'Staat';
+    display: flex;
+    justify-content: center; /*centra el texto del slogan*/
+    flex-direction: column; /*pone el columna a todo el texto del slogan*/ 
+    font-size: 1.8em; 
+}
+
+@media (max-width: 1440px){
+    .container-text-slogan{
+        font-size: 1.5em;
+    }
+    .navigation li{
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 266px){
+    .container-text-slogan{
+        font-size: 1em;
+    }
+    .navigation li{
+        font-size: 0.4em;
+    }
+} 
+@media (max-width: 178px){
+    .container-text-slogan{
+        font-size: 0.8em;
+    }
+    .navigation li{
+        font-size: 0.2em;
+    }
+}
