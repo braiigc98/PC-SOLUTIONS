@@ -13,6 +13,7 @@ body{
     background-color: grey;
     
 }
+/*pc-solution-3*/
 .header{
     background: rgb(46,6,60);
     background: linear-gradient(90deg, rgba(46,6,60,1) 27%, rgba(45,12,15,1) 84%);  
@@ -21,6 +22,7 @@ body{
     justify-content: space-around; /*para que quede un margen entre el borde y los contenidos del "header"*/    
     display: flex; /*permite centrar y mover la imagen del header*/
 }
+
 .navigation li{
     list-style: none; /*quita el estilo subrayado de las palabras del header*/
     display: inline-block; /* permite a las palabras alinearse en el header y al lado del logo*/
@@ -40,7 +42,6 @@ body{
     height: 100vh;
     background: rgb(69,0,92);
     background: linear-gradient(90deg, rgba(69,0,92,1) 14%, rgba(167,14,85,1) 86%);
-    background-color: blue;
 }
 .container-info-slogan{
     width: 100%;
@@ -49,11 +50,12 @@ body{
     align-items: center; /*para alinear en el centro todos los items del slogan*/   
     
 }
-.container-img-slogan{
+.container-img{
     justify-content: space-around;
     display: flex;
     width: 50%;
     justify-content: space-around; 
+    
 }
 .container-text-slogan{
     /* background-color: red; */
@@ -65,28 +67,56 @@ body{
     flex-direction: column; /*pone el columna a todo el texto del slogan*/ 
     font-size: 1.8em; 
 }
-
 @media (max-width: 1440px){
     .container-text-slogan{
+        font-size: 1.3em;
+        width: 90%;
+    }
+    .navigation li{
+        font-size: 0.8em;
+        
+    }
+}
+@media (min-width: 375px) and (max-width: 425px){ /*achica los textos de toda la pág en relación a su size original*/
+    .container-text-slogan{
         font-size: 1.5em;
+        width: 90%;
     }
     .navigation li{
         font-size: 0.9em;
+        
     }
 }
-@media (max-width: 266px){
+@media (min-width: 320px) and (max-width: 375px){ /*achica los textos de toda la pág en relación a su size original*/
     .container-text-slogan{
-        font-size: 1em;
+        font-size: 1.3em;
+        width: 90%;
+    }
+    .navigation li{
+        font-size: 0.9em;
+        
+    }
+}
+@media (min-width: 178px) and (max-width: 320px){ /*achica los textos de toda la pág en relación a su size original*/
+    .container-text-slogan{
+        font-size: 0.7em;
+        width: 90%;
+    }
+    .navigation li{
+        font-size: 0.8em;
+        
+    }
+} 
+@media (max-width: 178px){ /*achica los textos de toda la pág en relación a su size original*/
+    .container-text-slogan{
+        font-size: 0.8em;
+        width: 90%;
     }
     .navigation li{
         font-size: 0.4em;
-    }
-} 
-@media (max-width: 178px){
-    .container-text-slogan{
-        font-size: 0.8em;
-    }
-    .navigation li{
-        font-size: 0.2em;
+        
     }
 }
+
+
+
