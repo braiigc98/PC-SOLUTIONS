@@ -163,38 +163,38 @@ main{
  } */
  @media (max-width: 184px){
     .navigation li{
-        font-size: 0.5em;
+        font-size: 0.1em;
         margin-right: 45px;
     }
     .header img{
         margin-left: 35px;
-        width: 65px;
+        width: 45px;
     }
     .container-img img{
         margin-top: 5px;
-        width: 100%;
+        width: 50%;
     }
     .container-text-slogan{
         margin-top: 25px;
-        font-size: 0.4em;
+        font-size: 0.1em;
     }
     .section-secundaria h2{
-        font-size: 1.4em;
+        font-size: 1em;
     }
     .container-icons-info img{
         margin-left: 45px;
         margin-right: 45px;
-        width: 2.7em
+        width: 1.5em
     }
     .container-icons-info p{
-        font-size: 0.4em;
+        font-size: 0.2em;
     }
     .container-how-we-work h2{
-        font-size: 1.4em;
+        font-size: 1em;
     }
     .container-how-we-work-info p {
         margin-right: 9px;
         margin-left: 10px;
-        font-size: 0.4em;
+        font-size: 0.2em;
     }
  }
