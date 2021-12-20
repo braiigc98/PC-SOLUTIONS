@@ -130,15 +130,7 @@ main{
 /*mediaqueries*//*mediaqueries*//*mediaqueries*//*mediaqueries*/
 /*mediaqueries*//*mediaqueries*//*mediaqueries*//*mediaqueries*/
 
-@media (max-width: 1440px) and (min-width: 1024px){
-    .navigation li{
-        font-size: 1em
-    }
-    .header img{
-        width: 140px;
-    }
- }
-@media (max-width: 320px){
+/* @media (max-width: 320px){
     .navigation li{
         font-size: 0.7em
     }
@@ -166,6 +158,43 @@ main{
         font-size: 1.5em;
     }
     .container-how-we-work-info p {
+        font-size: 0.4em;
+    }
+ } */
+ @media (max-width: 184px){
+    .navigation li{
+        font-size: 0.5em;
+        margin-right: 45px;
+    }
+    .header img{
+        margin-left: 35px;
+        width: 65px;
+    }
+    .container-img img{
+        margin-top: 5px;
+        width: 100%;
+    }
+    .container-text-slogan{
+        margin-top: 25px;
+        font-size: 0.4em;
+    }
+    .section-secundaria h2{
+        font-size: 1.4em;
+    }
+    .container-icons-info img{
+        margin-left: 45px;
+        margin-right: 45px;
+        width: 2.7em
+    }
+    .container-icons-info p{
+        font-size: 0.4em;
+    }
+    .container-how-we-work h2{
+        font-size: 1.4em;
+    }
+    .container-how-we-work-info p {
+        margin-right: 9px;
+        margin-left: 10px;
         font-size: 0.4em;
     }
  }
