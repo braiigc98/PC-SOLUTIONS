@@ -38,7 +38,7 @@ body{
     color: whitesmoke; 
     font-family: 'Staat'; 
     font-weight: 400; 
-    font-size: 1em; 
+    font-size: 1rem; 
 }
 main{
     width: 100%;
@@ -73,7 +73,7 @@ main{
     justify-content: space-around; 
     align-items: center;
     flex-direction: column; 
-    font-size: 1.8em; 
+    font-size: 1.8rem; 
     margin-top: 10%;
 }
 .section-secundaria{ /*Sección 2 donde se detallada acerca de las ventajas y como trabajamos en la empresa*/
@@ -87,7 +87,7 @@ main{
 }
 .section-secundaria h2{/* edición del texto "Nuestras Ventajas"*/
     color: white;
-    font-size: 4em;
+    font-size: 4rem;
     font-family: 'Staat';
     font-weight: 1000;
 }
@@ -101,38 +101,252 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15em;
+    width: 15rem;
     margin: 0px 30px;
 }
 .container-icons-info p{/*contenedor donde se configuran los textos del container-icons*/
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    
 }
 .container-how-we-work h2{/*contenedor donde se configuran los h2 del container-how-we-work*/
     color: white;
-    font-size: 4em;
+    font-size: 4rem;
     font-family: 'Staat';
     font-weight: 1000;
     display: flex;
     justify-content: center;
 }
 .container-how-we-work-info{/*contenedor donde se configura el  container-how-we-work*/
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
 }
 .container-how-we-work-info p { /*contenedor donde se configuran los párrafos del  container-how-we-work*/
     color: white;
-    font-size: 1em;
+    font-size: 1.5rem;
 }
 /*mediaqueries*//*mediaqueries*//*mediaqueries*//*mediaqueries*/
 /*mediaqueries*//*mediaqueries*//*mediaqueries*//*mediaqueries*/
 /*mediaqueries*//*mediaqueries*//*mediaqueries*//*mediaqueries*/
 /*mediaqueries*//*mediaqueries*//*mediaqueries*//*mediaqueries*/
-
-/* @media (max-width: 320px){
+@media (max-width: 6000px) and (min-width: 3500px){
     .navigation li{
-        font-size: 0.7em
+        font-size: 1.9rem
+    }
+    .header img{
+        width: 350px;
+    }
+    .container-img img{
+        margin-top: 45px;
+        width: 20%;
+    }
+    .container-text-slogan{
+        margin-top: 190px;
+        font-size: 2rem;
+    }
+    .section-secundaria h2{
+        font-size: 3rem;
+    }
+    .container-icons-info img{
+        width: 25%;
+    }
+    .container-icons-info p{
+        font-size: 2.2rem;
+        margin-left: 28px;
+    }
+    .container-how-we-work h2{
+        font-size: 3rem;
+    }
+    .container-how-we-work-info p {
+        font-size: 2.2rem;
+        display: inline-block;
+        flex-direction: column;
+        margin-left: 28px;
+    }
+}
+@media (max-width: 1440px) and (min-width: 1217px){
+    .navigation li{
+        font-size: 0.9rem
+    }
+    .header img{
+        width: 150px;
+    }
+    .container-img img{
+        margin-top: 45px;
+        width: 60%;
+    }
+    .container-text-slogan{
+        margin-top: 125px;
+        font-size: 1.5rem;
+    }
+    .section-secundaria h2{
+        font-size: 2rem;
+    }
+    .container-icons-info img{
+        margin-right: 600px;
+        width: 15%;
+    }
+    .container-icons-info p{
+        display: flex;
+        font-size: 1.5rem;
+        margin-left: 28px;
+    }
+    .container-how-we-work h2{
+        font-size: 2rem;
+    }
+    .container-how-we-work-info p {
+        font-size: 1.5rem;
+        display: inline-block;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 600px;
+    }
+}
+@media (max-width: 1023px) and (min-width: 768px){
+    .navigation li{
+        font-size: 0.7rem
+    }
+    .header img{
+        width: 170px;
+    }
+    .container-img img{
+        margin-top: 45px;
+        width: 70%;
+    }
+    .container-text-slogan{
+        margin-top: 140px;
+        font-size: 1.2rem;
+    }
+    .section-secundaria h2{
+        font-size: 1.9rem;
+    }
+    .container-icons-info img{
+        width: 18%;
+    }
+    .container-icons-info p{
+        font-size: 1.3rem;
+        margin-left: 28px;
+    }
+    .container-how-we-work h2{
+        font-size: 1.9rem;
+    }
+    .container-how-we-work-info p {
+        font-size: 1.3rem;
+        display: inline-block;
+        flex-direction: column;
+        margin-left: 28px;
+    }
+}
+@media (max-width: 767px) and (min-width: 425px){
+    .navigation li{
+        font-size: 1.1rem
+    }
+    .header img{
+        width: 160px;
+    }
+    .container-img img{
+        margin-top: 45px;
+        width: 80%;
+    }
+    .container-text-slogan{
+        margin-top: 120px;
+        font-size: 1rem;
+    }
+    .section-secundaria h2{
+        font-size: 1.5rem;
+    }
+    .container-icons-info img{
+        width: 20%
+    }
+    .container-icons-info p{
+        font-size: 1rem;
+        margin-left: 28px;
+    }
+    .container-how-we-work h2{
+        font-size: 1.5rem;
+    }
+    .container-how-we-work-info p {
+        font-size: 1rem;
+        display: inline-block;
+        flex-direction: column;
+        margin-left: 28px;
+    }
+}
+@media (max-width: 424px) and (min-width: 375px){
+    .navigation li{
+        font-size: 1.1rem
+    }
+    .header img{
+        width: 160px;
+    }
+    .container-img img{
+        margin-top: 45px;
+        width: 100%;
+    }
+    .container-text-slogan{
+        margin-top: 95px;
+        font-size: 0.8rem;
+    }
+    .section-secundaria h2{
+        font-size: 1.2rem;
+    }
+    .container-icons-info img{
+        width: 20%
+    }
+    .container-icons-info p{
+        font-size: 0.8rem;
+        margin-left: 28px;
+    }
+    .container-how-we-work h2{
+        font-size: 1.2rem;
+    }
+    .container-how-we-work-info p {
+        font-size: 0.8rem;
+        display: inline-block;
+        flex-direction: column;
+        margin-left: 28px;
+    }
+}
+@media (max-width: 374px) and (min-width: 320px){
+    .navigation li{
+        font-size: 1rem
+    }
+    .header img{
+        width: 130px;
+    }
+    .container-img img{
+        margin-top: 45px;
+        width: 100%;
+    }
+    .container-text-slogan{
+        margin-top: 85px;
+        font-size: 0.8rem;
+    }
+    .section-secundaria h2{
+        font-size: 1rem;
+    }
+    .container-icons-info img{
+        width: 20%
+    }
+    .container-icons-info p{
+        font-size: 0.7rem;
+        margin-left: 28px;
+    }
+    .container-how-we-work h2{
+        font-size: 1rem;
+    }
+    .container-how-we-work-info p {
+        font-size: 0.7rem;
+        display: inline-block;
+        flex-direction: column;
+        margin-left: 28px;
+    }
+ }
+@media (max-width: 319px){
+    .navigation li{
+        font-size: 0.7rem
     }
     .header img{
         width: 110px;
@@ -143,27 +357,31 @@ main{
     }
     .container-text-slogan{
         margin-top: 45px;
-        font-size: 0.8em;
+        font-size: 0.8rem;
     }
     .section-secundaria h2{
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
     .container-icons-info img{
-        width: 2.6em
+        width: 20%
     }
     .container-icons-info p{
-        font-size: 0.4em;
+        font-size: 0.6rem;
+        margin-left: 28px;
     }
     .container-how-we-work h2{
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
     .container-how-we-work-info p {
-        font-size: 0.4em;
+        font-size: 0.6rem;
+        display: inline-block;
+        flex-direction: column;
+        margin-left: 28px;
     }
- } */
+ } 
  @media (max-width: 184px){
     .navigation li{
-        font-size: 0.1em;
+        font-size: 0.1rem;
         margin-right: 45px;
     }
     .header img{
@@ -176,25 +394,25 @@ main{
     }
     .container-text-slogan{
         margin-top: 25px;
-        font-size: 0.1em;
+        font-size: 0.1rem;
     }
     .section-secundaria h2{
-        font-size: 1em;
+        font-size: 1rem;
     }
     .container-icons-info img{
         margin-left: 45px;
         margin-right: 45px;
-        width: 1.5em
+        width: 1.5rem
     }
     .container-icons-info p{
-        font-size: 0.2em;
+        font-size: 0.2rem;
     }
     .container-how-we-work h2{
-        font-size: 1em;
+        font-size: 1rem;
     }
     .container-how-we-work-info p {
         margin-right: 9px;
         margin-left: 10px;
-        font-size: 0.2em;
+        font-size: 0.2rem;
     }
  }
